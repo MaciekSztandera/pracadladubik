@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Umów wizytę lekarską</h1>
+<form>
+    <fieldset>
+        <legend>Dane pacjenta</legend>
+            <label for="fimie">Imię:</label><br/>
+            <input type="text" id="fimie" name="fname" placeholder="Wprowadź imie"><br/>
+            <label for="fnazwisko">Nazwisko:</label><br/>
+            <input type="text" id="fnazwisko" name="fnazwisko" placeholder="Wprowadź Nazwisko"><br/> 
+            <label for="fpesel">PESEL:</label><br/>
+            <input type="text" id="fpesel" name="fpesel" placeholder="Wprowadź PESEL"><br/>
+            <label for="femail">E-mail:</label><br/>
+            <input type="text" id="femail" name="femail" placeholder="Wprowadź e-mail"><br/>
+            <label for="fnumer">Numer telefonu:</label><br/>
+            <input type="text" id="fnumer" name="fnumer" placeholder="Wprowadź numer telefonu (np. 123 456 789)"><br/>
+            <label for="fulica">Ulica:</label><br/>
+            <input type="text" id="fulica" name="fulica" placeholder="Wprowadź ulicę"><br/>
+            <label for="fdom">Numer domu:</label><br/>
+            <input type="text" id="fdom" name="fdom" placeholder="Wprowadź numer domu"><br/>
+            <label for="fmieszkanie">Numer mieszkania:</label><br/>
+            <input type="text" id="fmieszkanie" name="fmieszkanie" placeholder="Wprowadź numer mieszkania (opcjonalnie)"><br/>
+            <label for="fkod">Kod pocztowy:</label><br/>
+            <input type="text" id="fkod" name="fkod" placeholder="00-000"><br/>
+            <label for="fmiasto">Miasto:</label><br/>
+            <input type="text" id="fmiasto" name="fmiasto" placeholder="Wprowadź miasto"><br/>
+            <label for="fdate">Data urodzenia:</label><br/>
+            <input type="date" id="fdate" name="fdate" placeholder=""><br/>
+        </fieldset>
+    <fieldset>
+        <legend>Dane dotyczące wizyty</legend>
+            <label for="flekarz">Lekarz:</label><br/>
+            <select id="flekarz" name="flekarz">
+                <option value="Jan Kowalski">Jan Kowalski</option>
+                <option value="Piotr Sochacki">Piotr Sochacki</option>
+            </select>
+    </fieldset>
+</form>
+</body>
+</html>
