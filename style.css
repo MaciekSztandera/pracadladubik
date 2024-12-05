@@ -1,10 +1,54 @@
 body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #4C70AF;
+    margin-bottom: 20px;
     text-align: center;
 }
+form {
+    width: 45%;
+    margin: auto;
+}
+legend {
+    color: #4C70AF;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+fieldset {
+    border: 2px solid #4C70AF;
+    border-radius: 5px;
+    font-size: 14px;
+}
 input {
+    width: 100%;
+    display: block;
     border: 1px solid red;
     border-radius: 5px;
+    margin-right: 2px;
+    padding: 5px 0px;
 }
 #fmieszkanie {
     border-color: lime;
+}
+textarea {
+    width: 100%;
+    height: 64px;
+}
+#flekarz {
+    width: 100px;
+    border-color: blue;
+    border-radius: 5px;
+}
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 9px;
+    background-color: #4C70AF;
+    color: white;
+    border-radius: 3px;
+    border-width: 0px;
+    border: 0,5px solid blue;
 }

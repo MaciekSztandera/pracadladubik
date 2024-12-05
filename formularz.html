@@ -8,41 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Umów wizytę lekarską</h1>
+<h1 class="napis">Umów wizytę lekarską</h1>
 <form>
     <fieldset>
-        <legend>Dane pacjenta</legend>
-            <label for="fimie">Imię:</label><br/>
-            <input type="text" id="fimie" name="fname" placeholder="Wprowadź imie"><br/>
-            <label for="fnazwisko">Nazwisko:</label><br/>
-            <input type="text" id="fnazwisko" name="fnazwisko" placeholder="Wprowadź Nazwisko"><br/> 
-            <label for="fpesel">PESEL:</label><br/>
-            <input type="text" id="fpesel" name="fpesel" placeholder="Wprowadź PESEL"><br/>
-            <label for="femail">E-mail:</label><br/>
-            <input type="text" id="femail" name="femail" placeholder="Wprowadź e-mail"><br/>
-            <label for="fnumer">Numer telefonu:</label><br/>
-            <input type="text" id="fnumer" name="fnumer" placeholder="Wprowadź numer telefonu (np. 123 456 789)"><br/>
-            <label for="fulica">Ulica:</label><br/>
-            <input type="text" id="fulica" name="fulica" placeholder="Wprowadź ulicę"><br/>
-            <label for="fdom">Numer domu:</label><br/>
-            <input type="text" id="fdom" name="fdom" placeholder="Wprowadź numer domu"><br/>
-            <label for="fmieszkanie">Numer mieszkania:</label><br/>
-            <input type="text" id="fmieszkanie" name="fmieszkanie" placeholder="Wprowadź numer mieszkania (opcjonalnie)"><br/>
-            <label for="fkod">Kod pocztowy:</label><br/>
-            <input type="text" id="fkod" name="fkod" placeholder="00-000"><br/>
-            <label for="fmiasto">Miasto:</label><br/>
-            <input type="text" id="fmiasto" name="fmiasto" placeholder="Wprowadź miasto"><br/>
-            <label for="fdate">Data urodzenia:</label><br/>
-            <input type="date" id="fdate" name="fdate" placeholder=""><br/>
-        </fieldset>
+        <legend class="napis">Dane pacjenta</legend>
+            <label for="fimie">Imię:</label>
+                <input type="text" id="fimie" name="fname" placeholder="Wprowadź imie">
+            <label for="fnazwisko">Nazwisko:</label>
+                <input type="text" id="fnazwisko" name="fnazwisko" placeholder="Wprowadź Nazwisko">
+            <label for="fpesel">PESEL:</label>
+                <input type="text" id="fpesel" name="fpesel" placeholder="Wprowadź PESEL">
+            <label for="femail">E-mail:</label>
+                <input type="email" id="femail" name="femail" placeholder="Wprowadź e-mail">
+            <label for="fnumer">Numer telefonu:</label>
+                <input type="text" id="fnumer" name="fnumer" placeholder="Wprowadź numer telefonu (np. 123 456 789)">
+            <label for="fulica">Ulica:</label>
+                <input type="text" id="fulica" name="fulica" placeholder="Wprowadź ulicę">
+            <label for="fdom">Numer domu:</label>
+                <input type="text" id="fdom" name="fdom" placeholder="Wprowadź numer domu">
+            <label for="fmieszkanie">Numer mieszkania:</label>
+                <input type="text" id="fmieszkanie" name="fmieszkanie" placeholder="Wprowadź numer mieszkania (opcjonalnie)">
+            <label for="fkod">Kod pocztowy:</label>
+                <input type="text" id="fkod" name="fkod" placeholder="00-000">
+            <label for="fmiasto">Miasto:</label>
+                <input type="text" id="fmiasto" name="fmiasto" placeholder="Wprowadź miasto">
+            <label for="dataur">Data urodzenia:</label>
+                <input type="date" id="dataur" name="dataur">
+            <label for="godzwiz">Godzina wizyty:</label>
+                <input type="time" id="godzwiz" name="godzwiz">
+    </fieldset><br>
     <fieldset>
-        <legend>Dane dotyczące wizyty</legend>
-            <label for="flekarz">Lekarz:</label><br/>
-            <select id="flekarz" name="flekarz">
-                <option value="Jan Kowalski">Jan Kowalski</option>
-                <option value="Piotr Sochacki">Piotr Sochacki</option>
-            </select>
+        <legend class="napis">Dane dotyczące wizyty</legend>
+            <label for="flekarz">Lekarz:</label>
+                <select id="flekarz" name="flekarz"></select>
+            <label for="datawiz">Data wizyty:</label>
+                <input type="date" id="datawiz" name="datawiz">
+            <label for="godzwiz">Godzina wizyty:</label>
+                <input type="time" id="godzwiz" name="godzwiz">
+            <label for="uwagi">Dodatkowe uwagi:</label>
+            <textarea name="uwagi" placeholder="Podaj dodatkowe informacje..."></textarea>
     </fieldset>
+    <button type="submit">Umów wizytę</button>
 </form>
 </body>
 </html>
