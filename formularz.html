@@ -40,7 +40,12 @@
     <fieldset>
         <legend class="napis">Dane dotyczące wizyty</legend>
             <label for="flekarz">Lekarz:</label>
-                <select id="flekarz" name="flekarz"></select>
+                <select id="flekarz" name="flekarz" placeholder="Wybierz lekarza">
+                    <option hidden>Wybierz lekarza</option>
+                    <option>Kardiolog</option>
+                    <option>Ortopeda</option>
+                    <option>Pedatria</option>
+                </select>
             <label for="datawiz">Data wizyty:</label>
                 <input type="date" id="datawiz" name="datawiz">
             <label for="godzwiz">Godzina wizyty:</label>
